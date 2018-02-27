@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->pushButton->setText("Close");
-    ui->pushButton_2->setText("About")
+    ui->pushButton_2->setText("About");
 }
 
 MainWindow::~MainWindow()
@@ -53,5 +53,5 @@ void MainWindow::on_horizontalSlider_valueChanged(int value)
 
 void MainWindow::on_pushButton_2_clicked()
 {
-  QMessageBox::information(this,"About","This is a quick example in order to demonstrate how to convert 0-5v analog input counts into sensor data with decimals without using float or double. This was a thought experiment in order to speed up the amount of cycles per second an arduino can print an analog input.")
+  QMessageBox::information(this,"About","This is a quick example in order to demonstrate how to convert 0-5v analog input counts into sensor data with decimals without using float or double.");
 }
